@@ -1,9 +1,10 @@
 # PostgreSQL. Versions 7.4 and 8.x are supported.
 development:
-  adapter: jdbcpostgresql
+  adapter: jdbc
+  driver: org.apache.derby.jdbc.ClientDriver
+  # url: jdbc:derby://sync-lnx-007:31527/rx_production_2
+  url: jdbc:derby://localhost:1527/brianna_development;create=true
   encoding: unicode
-  host: localhost
-  database: Brianna_development
   username: root
   password: password
 

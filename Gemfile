@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '1.9.3', :engine => 'jruby', :engine_version => '1.7.4'
+ruby '1.9.3', :engine => 'jruby', :engine_version => '1.7.3'
   
 gem 'rails', '3.2.13'
 
@@ -7,6 +7,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'activerecord-jdbcpostgresql-adapter'
+gem 'activerecord-jdbc-adapter'
 
 gem 'jruby-openssl'
 
@@ -15,6 +16,7 @@ gem 'jruby-openssl'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  gem 'bootstrap-sass-rails', '2.3.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'therubyrhino'
@@ -38,3 +40,9 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+gem 'haml'
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'will_paginate', '~> 3.0.0'
+gem 'bootstrap-will_paginate'
